@@ -1,0 +1,61 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+// style the background and foreground colors on the atom-text-editor-element
+// itself
+atom-text-editor {
+
+}
+
+// To style other content in the text editor's shadow DOM, use the ::shadow
+// expression
+atom-text-editor::shadow .cursor {
+
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: .7;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  90% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+
+#linter-panel {
+  max-height: 65px;
+
+  .linter-highlight {
+    transform: scale(1);
+    -webkit-animation: bounceIn 1s infinite;
+  }
+}
+
+#linter-inline {
+  background-color: rgba(192, 192, 192, .3);
+  color: white;
+
+  a {
+    color: #9393FF;
+  }
+}

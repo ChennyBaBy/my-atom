@@ -1,0 +1,42 @@
+"*":
+  "exception-reporting":
+    userId: "23d5d5db-cff5-941b-3ed0-061f2c9a47db"
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "bracket-matcher"
+      "slack-chat"
+      "tree-view"
+    ]
+    themes: [
+      "seti-ui"
+      "seti-syntax"
+    ]
+  editor:
+    invisibles: {}
+    showInvisibles: true
+    softWrap: true
+    showIndentGuide: true
+    scrollPastEnd: true
+  linter: {}
+  "linter-jsxhint":
+    jsxhintExecutablePath: "/Users/adrianchen/.nvm/versions/node/v0.12.5/bin/jsxhint"
+  "linter-scss-lint":
+    executablePath: "/Users/adrianchen/.rvm/gems/ruby-2.1.6/bin/scss-lint"
+  softTabs: true
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  nuclide:
+    remoteProjectsConfig: []
+  "linter-eslint":
+    useGlobalEslint: true
+  "bracket-matcher":
+    autocompleteSmartQuotes: false
+  runne:
+    scopes:
+      js: "node"
+    extensions:
+      ".js": "mocha --compilers js:test/jsx_compiler.js --require test/test_helper.js"
+  "autocomplete-plus": {}
+  "slack-chat": {}
